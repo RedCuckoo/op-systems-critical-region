@@ -52,6 +52,7 @@ public class DekkerLock extends AbstractFixnumLock{
     public boolean tryLock(long l, TimeUnit u) {
         return false;
     }
+
     public boolean tryLock() {
         int id = getId();
         int another = 1 - id;  //if curr ID is 1, then other will be 0, 0 - 1
